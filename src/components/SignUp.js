@@ -14,17 +14,17 @@ const SignUp = ({ handleView, setIsLogged }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLogged(true);
-    Navigate("/home");
+    Navigate("/");
   };
   return (
     <SignUpContainer>
       <SignUpForm onSubmit={handleSubmit}>
         <h1>Sign Up</h1>
-          <Input type="text" placeholder="Username" />
-          <Input type="password" placeholder="Password" />
-          <Input type="email" placeholder="E-mail" />
+          <Input type="text" required placeholder="Username" />
+          <Input type="password" required placeholder="Password" />
+          <Input type="email" required placeholder="E-mail" />
         <LabelCheckbox>
-          <input type="checkbox" /> I read and agree to the Terms and Conditions
+          <input type="checkbox" required /> I read and agree to the Terms and Conditions
         </LabelCheckbox>
         <Button>Create Account</Button>
         <Pswitch>

@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     const location = useLocation();
     return (
         <>
-            {location.pathname !== '/login' && <NavBar />}
+            {location.pathname === '/login' ? null : <NavBar />}
             {children}
         </>
     )

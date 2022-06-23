@@ -7,7 +7,7 @@ const SignIn = ({ handleView, setIsLogged }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsLogged(true);
-        Navigate("/home");
+        Navigate("/");
     }
     return (
         <SignUpContainer>
