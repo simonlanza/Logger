@@ -13,8 +13,8 @@ const SignIn = ({ handleView, setIsLogged }) => {
         <SignUpContainer>
         <SignUpForm onSubmit={handleSubmit}>
             <h1>Sign In</h1>
-            <Input type="text" placeholder="Username" />
-            <Input type="password" placeholder="Password" />
+            <Input type="text" required placeholder="Username" />
+            <Input type="password" required placeholder="Password" />
             <Button>Sign In</Button>
             <Pswitch>
                 Don't have an account?
